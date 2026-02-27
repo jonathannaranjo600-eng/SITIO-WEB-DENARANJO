@@ -26,13 +26,15 @@ body {
 
 #contenedorBotones{
     display: flex;
+    align-items: flex-start;
     text-align: center;
     flex-direction: row;
     gap: 20%;
     justify-content: center;
-    width: 100%;
+    width: auto;
     position: relative;
     bottom: 60px;
+    
     
     
     
