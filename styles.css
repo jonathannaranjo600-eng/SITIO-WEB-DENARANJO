@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
 
 body {
-    background-color: #773919;
-    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0;
     position: relative;
+    background-image: url("images/inicio.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
 }
+
+
+    
 
 .contenedorSection {
     display: flex;
@@ -20,27 +33,29 @@ body {
     font-family: "Syne", sans-serif;
 
     padding: 20px;
-    margin: 0;
+    margin: 10px;
 
 }
 
-#contenedorBotones{
+#contenedorBotones {
     display: flex;
-    align-items: flex-start;
-    text-align: center;
-    flex-direction: row;
-    gap: 20%;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: auto;
-    position: relative;
-    bottom: 60px;
-    
-    
-    
-    
+    gap: 10px;
+top: 28%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    height: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 
 #contenedorBotones button{
+    
+    align-items: flex-start;
     background-color: #E7E1CA;
     font-family: "Syne", sans-serif;
     padding: 20px 40px 20px 40px;
@@ -60,6 +75,11 @@ body {
     color: #E7E1CA;
     font-family: "Syne", sans-serif;
     font-size: 25pt;
+    text-align: center;
+    justify-content: center;
+    
+
+
 }
 
 #contenedorcolumna{
@@ -74,6 +94,8 @@ body { margin: 0; }
   display: flex;
   min-height: 100vh;
   background: #2f320a; 
+    font-family: "oswald", sans-serif;
+
 }
 
 .col{
@@ -82,17 +104,19 @@ body { margin: 0; }
   padding: 48px 40px;
   position: relative; 
   color: #e9e1cf;
+
 }
 
 
 .col:first-child{
   border-left: none;
+  
+
 }
 
 .col h2{
   font-size: clamp(32px, 4vw, 72px);
   line-height: 0.95;
-  text-transform: uppercase;
   margin: 0;
 
   
@@ -107,18 +131,29 @@ body { margin: 0; }
   list-style: none;
   padding: 0;
   margin: 0;
+  font-family: "syne", sans-serif;
+  
 
   
   position: absolute;
   left: 40px;
   bottom: 40px;
-
-  font-size: 12px;
+ font-size: 15px;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+
   opacity: 0.9;
 }
 
 .col li{
   margin: 6px 0;
+}
+
+.contenedorstudio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.studio2 {
+  display: block;
 }
